@@ -1,4 +1,3 @@
-import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -39,6 +38,7 @@ const style = StyleSheet.create({
   topcontainer: {
     padding: 10,
     flexDirection: 'row',
+    margin:10
   },
   image: {
     width: 90,
