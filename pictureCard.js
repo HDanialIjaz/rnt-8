@@ -12,7 +12,7 @@ const PictureCard = ({cardData}) => (
     />
     <View style={style.contentContainer}>
       <View style={style.title}>
-        <Text style={style.titleText}>{cardData.name}</Text>
+        <Text style={style.titleText}>{cardData.title}</Text>
         <Text style={style.rating}>
           <FontAwesome name="star" size={18} color="blue" />
           {cardData.rating}
@@ -20,15 +20,15 @@ const PictureCard = ({cardData}) => (
       </View>
       <View style={style.detail}>
         <Text style={[style.detailText, style.detailbox]}>
-          {cardData.text1}
+          {cardData.ageRating}
         </Text>
-        <Text style={style.detailText}>{cardData.text2}</Text>
+        <Text style={style.detailText}>{cardData.releaseYear}</Text>
         <Text style={style.dot}>{cardData.dot}</Text>
-        <Text style={style.detailText}>{cardData.text3}</Text>
+        <Text style={style.detailText}>{cardData.genre}</Text>
         <Text style={style.dot}>{cardData.dot}</Text>
-        <Text style={style.detailText}>{cardData.text4}</Text>
+        <Text style={style.detailText}>{cardData.duration}</Text>
       </View>
-      <Text style={[style.detailText,style.simpleText]}>{cardData.text5}</Text>
+      <Text style={[style.detailText,style.simpleText]}>{cardData.sumary}</Text>
     </View>
   </View>
 );
