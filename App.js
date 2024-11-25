@@ -2,15 +2,15 @@ import { View, ScrollView } from 'react-native';
 import Button from './button.js';
 import PictureCard from './pictureCard.js';
 
-const data = {
+const button = {
   buttonName: 'New Realeses',
   color: 'blue',
 };
-const data1 = {
+const button1 = {
   buttonName: 'Top Rated',
   color: 'white',
 };
-const data2 = {
+const button2 = {
   buttonName: 'Vincents picks',
   color: 'white',
 };
@@ -52,9 +52,9 @@ const App = () => {
   return (
     <ScrollView>
       <View style={{ flexDirection: 'row', marginLeft: 16 }}>
-        <Button data={data} />
-        <Button data={data1} />
-        <Button data={data2} />
+        <Button data={button} />
+        <Button data={button1} />
+        <Button data={button2} />
       </View>
       <View>
         <PictureCard cardData={cardData} />
